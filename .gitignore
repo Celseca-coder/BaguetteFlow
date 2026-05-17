@@ -1,0 +1,29 @@
+# 忽略运行日志和临时目录
+logs*/
+run_logs*/
+workspaces*/
+aide_history/
+aide_sota/
+aide_true/
+cache/
+bench/
+
+# 忽略 Python 缓存和环境
+./aide/__pycache__/
+*.pyc
+*.egg-info/
+Miniconda3*.sh
+
+# 忽略 Jupyter 检查点和 IDE 配置
+.ipynb_checkpoints/
+.aider.*
+.claude/
+
+# 忽略大文件和文档
+*.pptx
+*.out
+*.jsonl
+=1.2.0
+=10.0
+=2.18.0
+=1.40.2
