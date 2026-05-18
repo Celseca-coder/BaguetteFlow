@@ -7,55 +7,7 @@
 
 </div>
 
-```mermaid
-flowchart TD
-    A([🗂️ Task Input\nDescription + Data]) --> B[Data Preview\nGenerator]
-    B --> C{{Search Policy\nUCT-Based Scheduler}}
-
-    C -->|"progress = 0..1\nadaptive probs"| D{Action\nSampling}
-
-    D -->|"no drafts yet"| E[✏️ Draft\nBlueprint + SCoT\nTwo-pass patch]
-    D -->|"p_improve"| F[⬆️ Improve\nAtomic edit\nDiff / Full-code]
-    D -->|"p_debug"| G[🐛 Debug\nRAG retrieval\nSurgical diff]
-    D -->|"p_explode"| H[🎆 Explode\nParallel sparks\nAmplitude-scaled]
-    D -->|"p_merge\nlate-run"| I[🔀 Merge\nCross-pollinate\ntwo parents]
-    D -->|"stagnation\ndetected"| J[🔥 Forced\nExplode\nHigh-temp reset]
-
-    E & F & G & H & I & J --> K[🖥️ Execute\nPython sandbox]
-
-    K --> L[📊 Evaluator\nMetric extraction\nis_bug detection]
-
-    L -->|buggy| M[(🕸️ DAG Journal\nNodes + edges\nlineage graph)]
-    L -->|valid metric| M
-
-    M --> N{Better than\nbest node?}
-    N -->|yes| O[💾 Save Snapshot\nbest_node update]
-    N -->|no| P[Memory Update]
-    O --> P
-
-    P --> Q[(🧠 Two-tier Memory)]
-    Q --> Q1[📝 Persistent MD\nProven synergies\nFatal pitfalls]
-    Q --> Q2[📋 Recent Buffer JSON\nRolling micro-log]
-
-    M --> R[(🔍 BM25/FAISS\nNode Retriever)]
-    R -->|top-k similar\npast bugs| G
-
-    Q1 & Q2 -->|fused context\ninjected into prompt| F
-    Q1 & Q2 -->|fused context\ninjected into prompt| H
-    Q1 & Q2 -->|fused context\ninjected into prompt| I
-
-    M -->|UCT scores\nvisit counts| C
-    O --> S([🏆 Best Submission\nsubmission.csv])
-
-    style A fill:#4A90D9,color:#fff,stroke:#2c5f8a
-    style S fill:#F5A623,color:#fff,stroke:#b87a10
-    style C fill:#7ED321,color:#fff,stroke:#5a9a18
-    style D fill:#9B59B6,color:#fff,stroke:#6c3483
-    style Q fill:#E74C3C,color:#fff,stroke:#a93226
-    style M fill:#1ABC9C,color:#fff,stroke:#148f77
-    style R fill:#3498DB,color:#fff,stroke:#1a6fa3
-    style J fill:#E74C3C,color:#fff,stroke:#a93226
-```
+![BaguetteFlow](./architecture.png)
 
 ## Timeline
 
