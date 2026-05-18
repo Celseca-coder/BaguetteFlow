@@ -7,7 +7,7 @@
 
 </div>
 
-![BaguetteFlow](architecture.png)
+![BaguetteFlow](./architechture.png)
 
 ## Timeline
 
