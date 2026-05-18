@@ -60,7 +60,7 @@ flowchart TD
 ## Timeline
 
 - **[18 May 2026]** BaguetteFlow achieves **Rank-1** on OpenAI's MLE-Bench leaderboard with **65.33% All Medal Rate** using Claude Sonnet 4.6 — the highest any single-model agent has ever scored on this benchmark.
-- **[May 2026]** Developed **BaguetteFlow**: a multi-paradigm evolutionary agentic framework for autonomous ML engineering, extending and radically re-architecting the AIDE codebase with FWA, UCT-based search, two-tier memory, and RAG-augmented debugging.
+- **[Mar 2026]** Developed **BaguetteFlow**: a multi-paradigm evolutionary agentic framework for autonomous ML engineering, extending and radically re-architecting the AIDE codebase with FWA, UCT-based search, two-tier memory, and RAG-augmented debugging.
 
 ---
 
@@ -139,9 +139,7 @@ Rather than regenerating full scripts on every step, BaguetteFlow supports **SEA
 
 ## Performance Metrics
 
-BaguetteFlow achieves state-of-the-art performance on the OpenAI MLE-Bench benchmark, ranking **#1 on the overall leaderboard** as of May 2026. Running on a 24-hour compute budget with Claude Sonnet 4.6, BaguetteFlow attains a **65.33% All Medal Rate**, outperforming all prior single-model agents including Famou-Agent 2.0, AIBuildAI, and MARS+ across Low/Lite and Medium splits.
-
-Notably, BaguetteFlow achieves a **100% submission validity rate** and a **100% above-median rate** across all 50 evaluated competitions, demonstrating exceptional breadth of competence. The 19 gold medals span domains including medical imaging, audio classification, NLP, tabular regression, and scientific discovery — evidence of the framework's generalization across heterogeneous ML task types.
+BaguetteFlow achieves state-of-the-art performance on the OpenAI MLE-Bench benchmark, ranking **#1 on the overall leaderboard** as of May 2026. Running on a 24-hour compute budget with Claude Sonnet 4.6, BaguetteFlow attains a **65.33% All Medal Rate**, outperforming all prior single-model agents including Famou-Agent 2.0, AIBuildAI, and MARS+ across Low/Lite and Medium splits.The 19 gold medals span domains including medical imaging, audio classification, NLP, tabular regression, and scientific discovery — evidence of the framework's generalization across heterogeneous ML task types.
 
 ### MLE-Bench Leaderboard (as of May 2026)
 
@@ -154,17 +152,17 @@ Notably, BaguetteFlow achieves a **100% submission validity rate** and a **100% 
 | MLEvolve | Gemini-3-Pro-Preview | 80.30 ± 1.52 | 57.89 ± 1.52 | 42.22 ± 2.22 | 61.33 ± 1.33 | 12h |
 | PiEvolve | Gemini-3-Pro-Preview | 80.30 ± 1.52 | 58.77 ± 0.88 | 40.00 ± 0.00 | 61.33 ± 0.77 | 24h |
 
-### Medal Breakdown (50 Competitions, Run 01)
+### Medal Breakdown 
 
 | Metric | Count |
 |--------|-------|
 | Total runs | 50 |
-| Valid submissions | 50 (100%) |
-| Any medal | 50 (100%) |
+| Valid submissions | 50 |
+| Any medal | 50 |
 | 🥇 Gold medals | 19 |
 | 🥈 Silver medals | 16 |
 | 🥉 Bronze medals | 15 |
-| Above median | 50 (100%) |
+| Above median | 50|
 
 **Selected Gold Medal Competitions:** `histopathologic-cancer-detection` · `mlsp-2013-birds` · `detecting-insults-in-social-commentary` · `predict-volcanic-eruptions-ingv-oe` · `tensorflow-speech-recognition-challenge` · `seti-breakthrough-listen` · `iwildcam-2019-fgvc6` · `dogs-vs-cats-redux-kernels-edition` · `denoising-dirty-documents` · `lmsys-chatbot-arena` · `plant-pathology-2021-fgvc8` · `learning-agency-lab-automated-essay-scoring-2` · `plant-pathology-2020-fgvc7` · `tabular-playground-series-dec-2021` · `tabular-playground-series-may-2022` · `stanford-covid-vaccine` · `aerial-cactus-identification` · `vinbigdata-chest-xray-abnormalities-detection` · `the-icml-2013-whale-challenge-right-whale-redux`
 
